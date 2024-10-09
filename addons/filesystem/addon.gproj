@@ -1,0 +1,8 @@
+GameProject {
+ ID "NetApi_Filesystem"
+ GUID "629177F86934C012"
+ TITLE "NetApi Filesystem"
+ Dependencies {
+  "58D0FB3206B6F859"
+ }
+}
