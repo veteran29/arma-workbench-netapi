@@ -58,7 +58,7 @@ impl WorkbenchStream for TcpStream {
                 break;
             }
 
-            length -= chunk.len();
+            length -= string.len();
             output += string;
         }
         Ok(output)
@@ -72,8 +72,8 @@ fn workbench_func(function: &str) -> Result<String, io::Error> {
 
     // Workbench specific
     const PROTOCOL_VERSION: u32 = 1;
-    // const USER_AGENT: &str = "NetApi Client";
-    const USER_AGENT: &str = "Blender 3.0";
+    const USER_AGENT: &str = "NetApi Client";
+    // const USER_AGENT: &str = "Blender 3.0";
     const CONTENT_TYPE: &str = "JsonRPC";
 
     let mut stream = TcpStream::connect(format!("{}:{}", ADDRESS, PORT))?;
