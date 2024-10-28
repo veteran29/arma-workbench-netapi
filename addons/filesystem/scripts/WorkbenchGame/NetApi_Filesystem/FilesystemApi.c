@@ -2,7 +2,7 @@
 
 class FileSystemApiResponse : JsonApiStruct
 {
-	bool banana = "uga buga";
+	string banana = "uga buga";
 
 	void FileSystemApiResponse()
 	{
